@@ -27,11 +27,16 @@ npm run dev
 
 - Framework: **Vite**, Output: **`dist`**, Build: **`npm run build`**
 - Do **not** use a catch-all rewrite that sends `/assets/*` to `index.html` (this app uses hash routes, so no SPA rewrite is required)
-- Set Production env vars (must exist at **build** time):
-  - `VITE_SUPABASE_URL`
-  - `VITE_SUPABASE_PUBLISHABLE_KEY`
+- Set these in **Project → Settings → Environment Variables** for **Production** (and Preview if you use it). Values only — no `KEY=` prefix, no quotes:
 
-Then redeploy. If the page is blank, open DevTools → Network and check whether `/assets/*.js` returns JavaScript (`content-type: text/javascript`), not HTML.
+| Name | Example value |
+|------|----------------|
+| `VITE_SUPABASE_URL` | `https://abcdxyz.supabase.co` |
+| `VITE_SUPABASE_PUBLISHABLE_KEY` | `sb_publishable_...` |
+
+Vite inlines these at **build** time. After adding or changing them, click **Redeploy** (redeploy the latest commit; “Redeploy” without rebuild can keep the old empty values).
+
+If you see `Invalid supabaseUrl`, the URL env var is missing or not a full `https://…supabase.co` URL in that deployment’s build.
 
 Open the URL Vite prints (usually http://localhost:5173), sign up, then use the nav:
 
