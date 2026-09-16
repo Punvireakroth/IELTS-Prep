@@ -4,10 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>IELTS Academic 6.5 Study Plan</title>
+  <style>
+    .boot-fallback {
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      color: #37352f;
+      max-width: 28rem;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+      line-height: 1.5;
+    }
+    .boot-fallback code {
+      font-size: 0.9em;
+      background: #f1f0ee;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <p class="boot-fallback">Loading IELTS Prep…</p>
+  </div>
   <div id="toast" class="toast" hidden></div>
+  <script>
+    window.addEventListener('error', function (e) {
+      var app = document.getElementById('app')
+      if (!app || app.dataset.booted === '1') return
+      app.innerHTML = '<div class="boot-fallback"><strong>App failed to load.</strong><br>Open the browser console for details.<br><code>' +
+        String((e && e.message) || 'Unknown error').replace(/</g, '&lt;') +
+        '</code></div>'
+    })
+    window.addEventListener('unhandledrejection', function (e) {
+      var app = document.getElementById('app')
+      if (!app || app.dataset.booted === '1') return
+      var msg = (e && e.reason && (e.reason.message || e.reason)) || 'Unhandled promise rejection'
+      app.innerHTML = '<div class="boot-fallback"><strong>App failed to load.</strong><br><code>' +
+        String(msg).replace(/</g, '&lt;') +
+        '</code></div>'
+    })
+  </script>
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>

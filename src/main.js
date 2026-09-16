@@ -40,6 +40,7 @@ function routeFromHash () {
 }
 
 function renderShell () {
+  if (app) app.dataset.booted = '1'
   const showProgress = currentView === 'plan'
   app.innerHTML = `
     <div class="app-shell">
@@ -99,6 +100,7 @@ function renderShell () {
 
 async function enterApp (nextSession) {
   session = nextSession
+  if (app) app.dataset.booted = '1'
   app.innerHTML = '<div class="loading">Loading your plan…</div>'
   try {
     const data = await loadAllUserData(session.user.id)
@@ -130,6 +132,7 @@ async function enterApp (nextSession) {
 
 function showAuth () {
   session = null
+  if (app) app.dataset.booted = '1'
   renderAuth(app, {
     onSession: (s) => enterApp(s)
   })

@@ -23,6 +23,16 @@ npm install
 npm run dev
 ```
 
+### Vercel
+
+- Framework: **Vite**, Output: **`dist`**, Build: **`npm run build`**
+- Do **not** use a catch-all rewrite that sends `/assets/*` to `index.html` (this app uses hash routes, so no SPA rewrite is required)
+- Set Production env vars (must exist at **build** time):
+  - `VITE_SUPABASE_URL`
+  - `VITE_SUPABASE_PUBLISHABLE_KEY`
+
+Then redeploy. If the page is blank, open DevTools → Network and check whether `/assets/*.js` returns JavaScript (`content-type: text/javascript`), not HTML.
+
 Open the URL Vite prints (usually http://localhost:5173), sign up, then use the nav:
 
 | View | What |
