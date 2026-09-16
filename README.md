@@ -14,7 +14,7 @@ Use `VITE_SUPABASE_PUBLISHABLE_KEY` (falls back to `VITE_SUPABASE_ANON_KEY` if p
 
 2. In the [Supabase SQL Editor](https://supabase.com/dashboard), run [`supabase/schema.sql`](supabase/schema.sql).
 
-3. Auth → Providers → Email: enable Email. For solo use you can turn off **Confirm email** under Auth settings so signup works immediately.
+3. Authentication → Providers → Email: enable Email. For solo use, turn **Confirm email** **off** (Authentication → Providers → Email, or Authentication → Sign In / Providers). If it stays on, signup creates the account but you must click the email link before you can sign in — easy to mistake for a failed signup.
 
 4. Install and run:
 
