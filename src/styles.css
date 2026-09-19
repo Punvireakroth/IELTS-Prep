@@ -605,12 +605,20 @@ details.week-block .week-meta {
 .log-entry header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 8px;
   margin-bottom: 6px;
   color: var(--text-muted);
   font-size: 12px;
 }
 
+.log-actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.log-entry button.edit,
 .log-entry button.delete {
   border: none;
   background: transparent;
@@ -620,7 +628,34 @@ details.week-block .week-meta {
   padding: 0;
 }
 
+.log-entry button.edit:hover { color: var(--accent); }
 .log-entry button.delete:hover { color: #c4554d; }
+
+.log-entry-editing {
+  border-color: rgba(35, 131, 226, 0.35);
+}
+
+.log-edit-form {
+  margin-top: 8px;
+}
+
+.log-edit-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn-secondary {
+  font-size: 13px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border-strong);
+  background: #fff;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.btn-secondary:hover { background: var(--hover); }
 
 .log-entry .skill-pill {
   display: inline-block;

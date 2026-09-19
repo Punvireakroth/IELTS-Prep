@@ -1,9 +1,10 @@
-import { insertLog, deleteLog } from '../data.js'
-import { renderMd, enhanceLinks } from '../content.js'
+import { insertLog, updateLog, deleteLog } from '../data.js'
+import { renderMd, mountMarkdown } from '../markdown.js'
 import { showToast } from '../toast.js'
 
 export function renderLogs (root, ctx) {
   const { user, state, setState } = ctx
+  let editingId = null
 
   root.innerHTML = `
     <h1>Error log</h1>
@@ -45,18 +46,69 @@ export function renderLogs (root, ctx) {
   const dateInput = form.querySelector('[name="date"]')
   dateInput.value = new Date().toISOString().slice(0, 10)
 
-  function paint () {
-    const box = root.querySelector('#logEntries')
-    const logs = state.logs || []
-    if (!logs.length) {
-      box.innerHTML = '<p class="empty-hint">No entries yet. Log mistakes after each L/R test.</p>'
-      return
+  function entryFields (entry) {
+    return {
+      date: entry.date || '',
+      skill: entry.skill || 'L',
+      source: entry.source || '',
+      raw_score: entry.raw_score || '',
+      band: entry.band || '',
+      qtype: entry.qtype || '',
+      why: entry.why || '',
+      better: entry.better || '',
+      word: entry.word || ''
     }
-    box.innerHTML = logs.map((entry) => `
+  }
+
+  function renderEditForm (entry) {
+    const f = entryFields(entry)
+    return `
+      <article class="log-entry log-entry-editing" data-id="${entry.id}">
+        <header>
+          <span><span class="skill-pill">${escapeHtml(entry.skill)}</span>Edit entry</span>
+        </header>
+        <form class="error-log-form log-edit-form" data-edit-form="${entry.id}">
+          <div class="row">
+            <label>Date <input name="date" type="date" value="${escapeHtml(f.date)}" required /></label>
+            <label>Skill
+              <select name="skill" required>
+                ${['L', 'R', 'W', 'S'].map((s) => `
+                  <option value="${s}" ${s === f.skill ? 'selected' : ''}>${skillLabel(s)}</option>
+                `).join('')}
+              </select>
+            </label>
+          </div>
+          <label>Source + URL <input name="source" type="text" value="${escapeHtml(f.source)}" /></label>
+          <div class="row">
+            <label>Raw score (L/R) <input name="raw_score" type="text" value="${escapeHtml(f.raw_score)}" /></label>
+            <label>Estimated band <input name="band" type="text" value="${escapeHtml(f.band)}" /></label>
+          </div>
+          <label>Question type missed <input name="qtype" type="text" value="${escapeHtml(f.qtype)}" /></label>
+          <label>Why <input name="why" type="text" value="${escapeHtml(f.why)}" /></label>
+          <label>
+            Correct answer / feedback
+            <span class="field-hint">Markdown supported</span>
+            <textarea name="better" rows="8">${escapeHtml(f.better)}</textarea>
+          </label>
+          <label>Word to reuse <input name="word" type="text" value="${escapeHtml(f.word)}" /></label>
+          <div class="log-edit-actions">
+            <button type="submit" class="btn-primary">Save changes</button>
+            <button type="button" class="btn-secondary" data-cancel-edit="${entry.id}">Cancel</button>
+          </div>
+        </form>
+      </article>
+    `
+  }
+
+  function renderEntry (entry) {
+    return `
       <article class="log-entry" data-id="${entry.id}">
         <header>
           <span><span class="skill-pill">${escapeHtml(entry.skill)}</span>${escapeHtml(entry.date || '')}</span>
-          <button type="button" class="delete" data-delete="${entry.id}">Delete</button>
+          <div class="log-actions">
+            <button type="button" class="edit" data-edit="${entry.id}">Edit</button>
+            <button type="button" class="delete" data-delete="${entry.id}">Delete</button>
+          </div>
         </header>
         ${entry.source ? `<div class="log-meta"><strong>Source:</strong> ${linkifySource(entry.source)}</div>` : ''}
         ${entry.raw_score || entry.band ? `<div class="log-meta"><strong>Score:</strong> ${escapeHtml(entry.raw_score || '—')} · band ${escapeHtml(entry.band || '—')}</div>` : ''}
@@ -65,14 +117,34 @@ export function renderLogs (root, ctx) {
         ${entry.better ? `
           <div class="log-body">
             <div class="log-body-label">Better</div>
-            <div class="log-rich md-body">${renderMd(entry.better)}</div>
+            <div class="log-rich" data-rich="${entry.id}"></div>
           </div>
         ` : ''}
         ${entry.word ? `<div class="log-meta"><strong>Word:</strong> ${escapeHtml(entry.word)}</div>` : ''}
       </article>
-    `).join('')
+    `
+  }
 
-    box.querySelectorAll('.log-rich').forEach((el) => enhanceLinks(el))
+  function mountRichBodies () {
+    const logs = state.logs || []
+    for (const entry of logs) {
+      if (!entry.better) continue
+      const el = root.querySelector(`[data-rich="${entry.id}"]`)
+      if (el) mountMarkdown(el, renderMd(entry.better))
+    }
+  }
+
+  function paint () {
+    const box = root.querySelector('#logEntries')
+    const logs = state.logs || []
+    if (!logs.length) {
+      box.innerHTML = '<p class="empty-hint">No entries yet. Log mistakes after each L/R test.</p>'
+      return
+    }
+    box.innerHTML = logs.map((entry) => (
+      editingId === entry.id ? renderEditForm(entry) : renderEntry(entry)
+    )).join('')
+    mountRichBodies()
   }
 
   paint()
@@ -80,17 +152,7 @@ export function renderLogs (root, ctx) {
   form.addEventListener('submit', async (e) => {
     e.preventDefault()
     const fd = new FormData(form)
-    const entry = {
-      date: fd.get('date') || null,
-      skill: fd.get('skill'),
-      source: fd.get('source') || null,
-      raw_score: fd.get('raw_score') || null,
-      band: fd.get('band') || null,
-      qtype: fd.get('qtype') || null,
-      why: fd.get('why') || null,
-      better: fd.get('better') || null,
-      word: fd.get('word') || null
-    }
+    const entry = formDataToEntry(fd)
     try {
       const row = await insertLog(user.id, entry)
       setState({ logs: [row, ...(state.logs || [])] })
@@ -104,11 +166,26 @@ export function renderLogs (root, ctx) {
   })
 
   root.querySelector('#logEntries').addEventListener('click', async (e) => {
-    const btn = e.target.closest('[data-delete]')
-    if (!btn) return
-    const id = btn.getAttribute('data-delete')
+    const editBtn = e.target.closest('[data-edit]')
+    if (editBtn) {
+      editingId = editBtn.getAttribute('data-edit')
+      paint()
+      return
+    }
+
+    const cancelBtn = e.target.closest('[data-cancel-edit]')
+    if (cancelBtn) {
+      editingId = null
+      paint()
+      return
+    }
+
+    const deleteBtn = e.target.closest('[data-delete]')
+    if (!deleteBtn) return
+    const id = deleteBtn.getAttribute('data-delete')
     try {
       await deleteLog(user.id, id)
+      if (editingId === id) editingId = null
       setState({ logs: (state.logs || []).filter((l) => l.id !== id) })
       paint()
     } catch (err) {
@@ -116,6 +193,45 @@ export function renderLogs (root, ctx) {
       showToast('Could not delete entry')
     }
   })
+
+  root.querySelector('#logEntries').addEventListener('submit', async (e) => {
+    const editForm = e.target.closest('[data-edit-form]')
+    if (!editForm) return
+    e.preventDefault()
+    const id = editForm.getAttribute('data-edit-form')
+    const fd = new FormData(editForm)
+    const entry = formDataToEntry(fd)
+    try {
+      const row = await updateLog(user.id, id, entry)
+      setState({
+        logs: (state.logs || []).map((l) => (l.id === id ? row : l))
+      })
+      editingId = null
+      paint()
+      showToast('Entry updated')
+    } catch (err) {
+      console.error(err)
+      showToast('Could not update entry')
+    }
+  })
+}
+
+function formDataToEntry (fd) {
+  return {
+    date: fd.get('date') || null,
+    skill: fd.get('skill'),
+    source: fd.get('source') || null,
+    raw_score: fd.get('raw_score') || null,
+    band: fd.get('band') || null,
+    qtype: fd.get('qtype') || null,
+    why: fd.get('why') || null,
+    better: fd.get('better') || null,
+    word: fd.get('word') || null
+  }
+}
+
+function skillLabel (skill) {
+  return ({ L: 'Listening', R: 'Reading', W: 'Writing', S: 'Speaking' })[skill] || skill
 }
 
 function escapeHtml (s) {

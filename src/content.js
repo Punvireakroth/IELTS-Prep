@@ -1,7 +1,5 @@
-import { marked } from 'marked'
 import planMd from '../IELTS-Academic-6.5-Study-Plan.md?raw'
-
-marked.setOptions({ gfm: true, breaks: false })
+import { renderMd, enhanceLinks, mountMarkdown } from './markdown.js'
 
 const SCORE_ROWS = [
   { key: 'diagnostic', label: '17–18 Sep diagnostic' },
@@ -74,18 +72,6 @@ const howToParts = howTo
   ? extractSubsections(howTo.markdown, [/Daily template/i, /Weekend template/i, /Score targets/i])
   : { intro: '', blocks: '' }
 
-function renderMd (md) {
-  if (!md) return ''
-  return marked.parse(md)
-}
-
-function enhanceLinks (root) {
-  root.querySelectorAll('a[href^="http"]').forEach((a) => {
-    a.setAttribute('target', '_blank')
-    a.setAttribute('rel', 'noopener noreferrer')
-  })
-}
-
 export function getPlanTitle () {
   const m = planMd.match(/^#\s+(.+)$/m)
   return m ? m[1].trim() : 'IELTS Study Plan'
@@ -126,10 +112,4 @@ export function renderCalendarHtml () {
   return renderMd(`## ${calendar.title}\n\n${calendar.markdown}`)
 }
 
-export function mountMarkdown (el, html) {
-  el.innerHTML = html
-  el.classList.add('md-body')
-  enhanceLinks(el)
-}
-
-export { enhanceLinks, renderMd }
+export { enhanceLinks, mountMarkdown, renderMd }

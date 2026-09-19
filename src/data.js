@@ -112,6 +112,18 @@ export async function insertLog (userId, entry) {
   return data
 }
 
+export async function updateLog (userId, id, entry) {
+  const { data, error } = await supabase
+    .from('error_logs')
+    .update(entry)
+    .eq('user_id', userId)
+    .eq('id', id)
+    .select()
+    .single()
+  if (error) throw error
+  return data
+}
+
 export async function deleteLog (userId, id) {
   const { error } = await supabase
     .from('error_logs')
