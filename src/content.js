@@ -132,4 +132,4 @@ export function mountMarkdown (el, html) {
   enhanceLinks(el)
 }
 
-export { enhanceLinks }
+export { enhanceLinks, renderMd }

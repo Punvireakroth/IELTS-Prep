@@ -1,4 +1,5 @@
 import { insertLog, deleteLog } from '../data.js'
+import { renderMd, enhanceLinks } from '../content.js'
 import { showToast } from '../toast.js'
 
 export function renderLogs (root, ctx) {
@@ -28,7 +29,11 @@ export function renderLogs (root, ctx) {
         </div>
         <label>Question type missed <input name="qtype" type="text" placeholder="TFNG, headings…" /></label>
         <label>Why <input name="why" type="text" placeholder="word trap / time / grammar…" /></label>
-        <label>Correct answer / better sentence <textarea name="better"></textarea></label>
+        <label>
+          Correct answer / feedback
+          <span class="field-hint">Markdown supported — **bold**, lists, links</span>
+          <textarea name="better" rows="6" placeholder="Write feedback with headings, bullet lists, and emphasis…"></textarea>
+        </label>
         <label>Word to reuse <input name="word" type="text" /></label>
         <button type="submit">Save entry</button>
       </form>
@@ -53,14 +58,21 @@ export function renderLogs (root, ctx) {
           <span><span class="skill-pill">${escapeHtml(entry.skill)}</span>${escapeHtml(entry.date || '')}</span>
           <button type="button" class="delete" data-delete="${entry.id}">Delete</button>
         </header>
-        ${entry.source ? `<div><strong>Source:</strong> ${escapeHtml(entry.source)}</div>` : ''}
-        ${entry.raw_score || entry.band ? `<div><strong>Score:</strong> ${escapeHtml(entry.raw_score || '—')} · band ${escapeHtml(entry.band || '—')}</div>` : ''}
-        ${entry.qtype ? `<div><strong>Missed:</strong> ${escapeHtml(entry.qtype)}</div>` : ''}
-        ${entry.why ? `<div><strong>Why:</strong> ${escapeHtml(entry.why)}</div>` : ''}
-        ${entry.better ? `<div><strong>Better:</strong> ${escapeHtml(entry.better)}</div>` : ''}
-        ${entry.word ? `<div><strong>Word:</strong> ${escapeHtml(entry.word)}</div>` : ''}
+        ${entry.source ? `<div class="log-meta"><strong>Source:</strong> ${linkifySource(entry.source)}</div>` : ''}
+        ${entry.raw_score || entry.band ? `<div class="log-meta"><strong>Score:</strong> ${escapeHtml(entry.raw_score || '—')} · band ${escapeHtml(entry.band || '—')}</div>` : ''}
+        ${entry.qtype ? `<div class="log-meta"><strong>Missed:</strong> ${escapeHtml(entry.qtype)}</div>` : ''}
+        ${entry.why ? `<div class="log-meta"><strong>Why:</strong> ${escapeHtml(entry.why)}</div>` : ''}
+        ${entry.better ? `
+          <div class="log-body">
+            <div class="log-body-label">Better</div>
+            <div class="log-rich md-body">${renderMd(entry.better)}</div>
+          </div>
+        ` : ''}
+        ${entry.word ? `<div class="log-meta"><strong>Word:</strong> ${escapeHtml(entry.word)}</div>` : ''}
       </article>
     `).join('')
+
+    box.querySelectorAll('.log-rich').forEach((el) => enhanceLinks(el))
   }
 
   paint()
@@ -112,4 +124,12 @@ function escapeHtml (s) {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
+}
+
+function linkifySource (source) {
+  const value = String(source ?? '').trim()
+  if (/^https?:\/\//i.test(value)) {
+    return `<a href="${escapeHtml(value)}" target="_blank" rel="noopener noreferrer">${escapeHtml(value)}</a>`
+  }
+  return escapeHtml(value)
 }
