@@ -1,52 +1,39 @@
-# IELTS Prep (Supabase)
+# IELTS prep
 
-Notion-like study plan with email auth and synced progress.
+One page for the work before IELTS Academic. The plan, the materials, and your progress sit together.
 
-## Setup
+It is written for a candidate around band 5.5–6 who wants an overall 6.5, with no skill below 6.0, on the computer test in Cambodia.
 
-1. Copy env file and paste your project URL + **publishable** key (same as the old “anon” key):
-
-```bash
-cp .env.example .env
-```
-
-Use `VITE_SUPABASE_PUBLISHABLE_KEY` (falls back to `VITE_SUPABASE_ANON_KEY` if present).
-
-2. In the [Supabase SQL Editor](https://supabase.com/dashboard), run [`supabase/schema.sql`](supabase/schema.sql).
-
-3. Authentication → Providers → Email: enable Email. For solo use, turn **Confirm email** **off** (Authentication → Providers → Email, or Authentication → Sign In / Providers). If it stays on, signup creates the account but you must click the email link before you can sign in — easy to mistake for a failed signup.
-
-4. Install and run:
+## Run it
 
 ```bash
 npm install
 npm run dev
 ```
 
-### Vercel
+Open http://localhost:5173. Until Supabase is connected, ticks, notes, scores, and the error log stay in this browser.
 
-- Framework: **Vite**, Output: **`dist`**, Build: **`npm run build`**
-- Do **not** use a catch-all rewrite that sends `/assets/*` to `index.html` (this app uses hash routes, so no SPA rewrite is required)
-- Set these in **Project → Settings → Environment Variables** for **Production** (and Preview if you use it). Values only — no `KEY=` prefix, no quotes:
+To sync them to your project:
 
-| Name | Example value |
-|------|----------------|
-| `VITE_SUPABASE_URL` | `https://abcdxyz.supabase.co` |
-| `VITE_SUPABASE_PUBLISHABLE_KEY` | `sb_publishable_...` |
+1. Copy `.env.example` to `.env`.
+2. Paste the project URL and the publishable key (`sb_publishable_...`). Leave the secret key in the dashboard.
+3. In the Supabase SQL editor, run `supabase/migrations/20261011050940_study_progress.sql`, then `supabase/schema.sql`.
+4. Restart `npm run dev`, then create an account from the account control in the settings panel.
 
-Vite inlines these at **build** time. After adding or changing them, click **Redeploy** (redeploy the latest commit; “Redeploy” without rebuild can keep the old empty values).
+Email confirmation is on by default. For a personal project, turn off Confirm email under Authentication settings, or set the site URL to `http://localhost:5173` so the confirmation link can return to the page.
 
-If you see `Invalid supabaseUrl`, the URL env var is missing or not a full `https://…supabase.co` URL in that deployment’s build.
+## How the page works
 
-Open the URL Vite prints (usually http://localhost:5173), sign up, then use the nav:
+[plan.md](plan.md) is the whole plan. A heading like `### Setup · 1.5 hours` is a required day. The blocks inside that day stay as checkboxes. Materials and links live inside the days that use them. Sections without an hours heading (the resource hub, the rules, booking) stay on the page as reference.
 
-| View | What |
-|------|------|
-| Plan | Day-by-day checkboxes |
-| Scores | Weekly score tracker |
-| Error log | Mistake log |
-| Overview | Editable exam meta + templates / targets |
-| Resources | Resource hub |
-| Guide | How to use, done means, booking, rules |
+Set a start date and how many hours you can study each week. The page gives each required day a due date, in order. It also shows how far behind or ahead you are, and a projected finish date. For the first week the projection uses the hours per week you set. After that it uses the hours you actually complete. Until you set the hours, the page uses 12 a week.
 
-Progress is stored in Supabase (`profiles`, `task_checks`, `error_logs`, `score_entries`). If you still have ticks from the old localStorage page, they import once on first login when the cloud tables are empty.
+A target date is optional. If the projection misses it, the page tells you how many hours a week would hit it.
+
+Change the start date or the hours per week to move the deadlines. **Reset deadlines from today** leaves finished days checked and schedules the remaining required days from today.
+
+Check a day when that day's work exists. Check each block as you finish it. The note on an open day is for a score, a mistake, or a sentence you want to reuse.
+
+The score tracker and the error log sit under those headings. Week 6 is built from the error log.
+
+The target test window in the introduction is when to book the exam. It is not a due date on the study days.
