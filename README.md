@@ -24,7 +24,7 @@ Email confirmation is on by default. For a personal project, turn off Confirm em
 
 ## How the page works
 
-[plan.md](plan.md) is the whole plan. A heading like `### Setup · 1.5 hours` is a required day. The blocks inside that day stay as checkboxes. Materials and links live inside the days that use them. Sections without an hours heading (the resource hub, the rules, booking) stay on the page as reference.
+[plan.md](plan.md) is the whole plan. A heading like `### Setup · 1.5 hours` is a required day. The blocks inside that day stay as checkboxes. Materials and links live inside the days that use them. Sections without an hours heading stay on the page as reference.
 
 Set a start date and how many hours you can study each week. The page gives each required day a due date, in order. It also shows how far behind or ahead you are, and a projected finish date. For the first week the projection uses the hours per week you set. After that it uses the hours you actually complete. Until you set the hours, the page uses 12 a week.
 
@@ -35,5 +35,3 @@ Change the start date or the hours per week to move the deadlines. **Reset deadl
 Check a day when that day's work exists. Check each block as you finish it. The note on an open day is for a score, a mistake, or a sentence you want to reuse.
 
 The score tracker and the error log sit under those headings. Week 6 is built from the error log.
-
-The target test window in the introduction is when to book the exam. It is not a due date on the study days.

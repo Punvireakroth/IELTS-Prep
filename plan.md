@@ -1,208 +1,7 @@
 # IELTS Academic 6.5 Study Plan
 
 **Test:** IELTS Academic (computer in Cambodia)  
-**Target test window:** 28 October – 7 November 2026  
-**Current level:** about band 5.5–6  
-**Goal:** **overall 6.5+**, with **no skill below 6.0**  
 **Daily time:** 1.5–2 hours (90–120 minutes)
-
-Set a start date and how many hours you can study each week. The page gives each day a due date, in order, from those two numbers. It also shows a projected finish date from the pace you actually keep.
-
-If you fall behind, change the start date or the hours per week. Or use **Reset deadlines from today**. Checked days stay checked. The remaining days get new due dates from today.
-
-Tick a day when that day's work is finished. Tick each block inside the day as you finish it.
-
-Book a test date in the window above if seats are open. British Council Cambodia has delivered IELTS on computer only since 1 February 2026. Speaking is still a live interview with an examiner.
-
-- [Book with British Council Cambodia](https://cambodia.britishcouncil.org/ielts/book-test)
-- [Book with IDP Cambodia](https://ielts.idp.com/cambodia)
-
-## How to use this plan
-
-1. Open the **exact link** for that day. If a British Council page shows many “Start test” buttons, that is a **menu of sample question types**, not one full exam. Click only the named task, or skip the website and use the PDF in the hub.
-2. Time yourself whenever the task says *timed*.
-3. After every Listening or Reading test, copy the /40 and the band into the **score tracker** and fill the **error log**. That log decides Week 6. The band from IELTS Online Tests is an estimate.
-4. Write **four days every week**. This is the usual reason 5.5–6 candidates stay at 6.0.
-5. Record Speaking at least **three times a week**. Listen back. Mark hesitation, grammar, and off-topic answers against the official descriptors.
-6. If you miss a day, skip the *extra English* block, not Writing or the timed test.
-
-### Daily template (weekdays, 90–120 min)
-
-| Block             | Minutes | What                                    |
-| ----------------- | ------- | --------------------------------------- |
-| Main skill        | 50–60   | Listening **or** Reading **or** Writing |
-| Second skill      | 25–30   | The skill you did not do as main        |
-| Speaking          | 15      | Record; full Parts 1–3 at least 3×/week |
-| Error log + words | 10      | 8–10 words from that day’s text         |
-
-### Weekend template
-
-One longer mock (Listening + Reading **or** full Writing in 60 min), then review. Keep Speaking to 15 minutes so you do not burn out.
-
-### Score targets for 6.5
-
-Official conversion can shift slightly by paper. Aim for these raw scores in timed practice:
-
-| Skill            | Band 6.0    | Band 6.5                                                                                                                  | Band 7.0    |
-| ---------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| Listening        | ~23–25 / 40 | **~26–28 / 40**                                                                                                           | ~30–32 / 40 |
-| Academic Reading | ~23–26 / 40 | **~27–29 / 40**                                                                                                           | ~30–32 / 40 |
-| Writing          | n/a | **6.5 on descriptors** (clear overview in Task 1; clear position in Task 2; paragraphs; errors that do not block meaning) | n/a |
-| Speaking         | n/a | **6.5 on descriptors** (keep going, paraphrase, mix of simple + complex sentences, generally easy to understand)          | n/a |
-
-Overall 6.5 is the average of four skills, rounded in the usual IELTS way (6.25 → 6.5). One 5.5 can still pull the average down. Do not ignore your weakest paper.
-
-## Resource hub
-
-Official pages are for the real computer screen and the marking rules. [IELTS Online Tests](https://ieltsonlinetests.com/) is for repeated Listening and Reading scores. A Cambridge IELTS Academic 18–20 book comes first on the Week 4–6 mock days when you own it. Teacher sites are for *how* to answer. Write & Improve is for Writing feedback.
-
-### Official: start here
-
-| Resource                                                   | Link                                                                                                                                                                                                                                   |
-| ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| IELTS Academic sample tests (all skills, computer + paper) | [https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test](https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test)                                                     |
-| Academic test format                                       | [https://ielts.org/take-a-test/test-types/ielts-academic-test](https://ielts.org/take-a-test/test-types/ielts-academic-test)                                                                                                           |
-| Cambridge test-format detail                               | [https://www.cambridgeenglish.org/exams-and-tests/ielts/test-format/](https://www.cambridgeenglish.org/exams-and-tests/ielts/test-format/)                                                                                             |
-| Writing band descriptors (PDF)                             | [https://ielts.org/cdn/ielts-guides/ielts-writing-band-descriptors.pdf](https://ielts.org/cdn/ielts-guides/ielts-writing-band-descriptors.pdf)                                                                                         |
-| Speaking band descriptors (PDF)                            | [https://ielts.org/cdn/ielts-guides/ielts-speaking-band-descriptors.pdf](https://ielts.org/cdn/ielts-guides/ielts-speaking-band-descriptors.pdf)                                                                                       |
-| Academic Reading sample tasks (PDF)                        | [https://ielts.org/cdn/Sample-tests/ielts-academic-reading-sample-tasks-2023.pdf](https://ielts.org/cdn/Sample-tests/ielts-academic-reading-sample-tasks-2023.pdf)                                                                     |
-| Academic Writing sample tasks + examiner comments (PDF)    | [https://ielts.org/cdn/Sample-tests/ielts-academic-writing-sample-tasks-2023.pdf](https://ielts.org/cdn/Sample-tests/ielts-academic-writing-sample-tasks-2023.pdf)                                                                     |
-| Listening sample tasks (PDF)                               | [https://s3.eu-west-2.amazonaws.com/ielts-web-static/production/Sample-tests/ielts-listening-sample-tasks-2023.pdf](https://s3.eu-west-2.amazonaws.com/ielts-web-static/production/Sample-tests/ielts-listening-sample-tasks-2023.pdf) |
-
-### Free scored mocks (IELTS Online Tests)
-
-[IELTS Online Tests](https://ieltsonlinetests.com/) scores Listening and Reading for free: a mark out of 40, a band estimate, and the answer key. These are practice papers. The real computer screen is still the IELTS.org sample, used in Week 3 and Week 6. When you own Cambridge IELTS Academic 18, 19, or 20, that book comes first on the Week 4–6 full papers.
-
-Copy the /40 and the band into the score tracker on this page and into the error log. The site’s band is an estimate. Keep aiming for **26–28/40** Listening and **27–29/40** Reading.
-
-On Listening, play the audio once and type the answers while it plays. Skip any extra 10-minute transfer time. The Cambodia computer test has none.
-
-For Reading, open an **Academic** paper (three long texts). Leave General Training closed.
-
-The Writing and Speaking tests are free to sit. The site’s scores for those two skills are paid. Mark Writing with the official descriptors and [Write & Improve](https://writeandimprove.com/free?lang=en-EN). Record Speaking on your phone.
-
-Each full paper named in the weeks below is a different test. Sit each one once.
-
-| Resource | Link |
-| --- | --- |
-| Exam library | [https://ieltsonlinetests.com/ielts-exam-library](https://ieltsonlinetests.com/ielts-exam-library) |
-| Academic Reading | [https://ieltsonlinetests.com/ielts-exam-library?skill=reading&tab=academic](https://ieltsonlinetests.com/ielts-exam-library?skill=reading&tab=academic) |
-| Listening | [https://ieltsonlinetests.com/ielts-exam-library?skill=listening&tab=academic](https://ieltsonlinetests.com/ielts-exam-library?skill=listening&tab=academic) |
-
-### British Council: how to use the messy site
-
-The page you found, [Academic Reading practice](https://takeielts.britishcouncil.org/prepare/ielts-free-practice-mock-tests/academic/reading), is **not** one 60-minute test. It is a **list of sample question types** (multiple choice, True/False/Not Given, table completion, and so on). Each “Start test” is a short extract. Doing every button is not a mock exam.
-
-**Prefer these instead of hunting through that menu:**
-
-| What you actually need | Open this (one file or one button) |
-| --- | --- |
-| Full computer Academic Reading (3 texts, 40 questions) | [IELTS.org Academic samples](https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test) → click **Academic Reading test** |
-| Full computer Listening (4 parts, 40 questions) | Same page → click **Listening test** |
-| Academic Writing Task 1 + Task 2 | Same page → **Academic Writing Sample task Part 1** then **Part 2** (or the computer **Academic Writing test**) |
-| All Reading question types + answers in **one PDF** | [Academic Reading sample tasks PDF](https://ielts.org/cdn/Sample-tests/ielts-academic-reading-sample-tasks-2023.pdf) |
-| All Listening types + answers in **one PDF** | [Listening sample tasks PDF](https://s3.eu-west-2.amazonaws.com/ielts-web-static/production/Sample-tests/ielts-listening-sample-tasks-2023.pdf) |
-| Writing prompts + examiner comments in **one PDF** | [Academic Writing sample tasks PDF](https://ielts.org/cdn/Sample-tests/ielts-academic-writing-sample-tasks-2023.pdf) |
-| Extra computer-screen pass after you book | [IELTS Ready](https://takeielts.britishcouncil.org/take-ielts/prepare/ielts-ready) and [Road to IELTS (Cambodia)](https://cambodia.britishcouncil.org/ielts/prepare). Scored Listening and Reading papers are in **Free scored mocks** |
-
-If you still open the British Council Reading menu, do only this:
-
-1. Close the purple “Cambodia / IELTS Ready” banners (**Continue on current site**).
-2. Ignore General Training, UKVI, and the footer.
-3. Scroll to **IELTS Academic – computer sample tests**.
-4. Click **one** named task (table below). Finish it.
-5. Click the **Answer Key (PDF)** that sits **under that same task**. Do not open a different task’s PDF.
-6. Or skip the buttons and download **Academic Reading sample tasks (PDF)** at the bottom of that page (same content as the IELTS.org PDF).
-
-**If the plan says this question type, click only this button on the BC Reading page:**
-
-| Question type | Button name on the BC page | Or PDF page in the [Reading PDF](https://ielts.org/cdn/Sample-tests/ielts-academic-reading-sample-tasks-2023.pdf) |
-| --- | --- | --- |
-| True / False / Not Given | Identifying Information (True/False/Not Given) | p. 12 |
-| Matching features | Matching Features | p. 3 |
-| Matching headings | *(not on the BC menu: use the PDF)* | p. 15 |
-| Table completion | Table Completion | p. 6 |
-| Note completion | Note Completion | p. 30 |
-| Summary (words from text) | Summary Completion (selecting words from the text) | p. 34 |
-| Summary (from a list) | Summary Completion (selecting from a list of words or phrases) | p. 38 |
-| Sentence completion | Sentence Completion | n/a |
-| Matching sentence endings | Matching Sentence Endings | p. 19 |
-| Multiple choice (one answer) | Multiple Choice (one answer) | p. 27 |
-| Multiple choice (more than one) | Multiple Choice (more than one answer) | p. 23 |
-| Diagram labels | *(PDF only)* | p. 44 |
-
-Same idea for the other BC skill pages: they are menus. Use [IELTS.org Academic samples](https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test) for the real computer screen. Use **Free scored mocks** above for a Listening or Reading paper that gives you a /40.
-
-| Skill page (menu: optional) | Link |
-| --- | --- |
-| Academic Reading (question-type menu) | https://takeielts.britishcouncil.org/prepare/ielts-free-practice-mock-tests/academic/reading |
-| Academic Listening (question-type menu) | https://takeielts.britishcouncil.org/prepare/ielts-free-practice-mock-tests/academic/listening |
-| Academic Writing (question-type menu) | https://takeielts.britishcouncil.org/prepare/ielts-free-practice-mock-tests/academic/writing |
-| Speaking (question-type menu) | https://takeielts.britishcouncil.org/prepare/ielts-free-practice-mock-tests/academic/speaking |
-| Booking + Road to IELTS | https://cambodia.britishcouncil.org/ielts/prepare |
-| IELTS Ready | https://takeielts.britishcouncil.org/take-ielts/prepare/ielts-ready |
-
-### IDP Cambodia / IDP official
-
-| Resource                      | Link                                                                                                                                           |
-| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| IDP Cambodia hub              | [https://ielts.idp.com/cambodia](https://ielts.idp.com/cambodia)                                                                               |
-| IDP Cambodia Academic Reading | [https://ielts.idp.com/cambodia/prepare/academic-reading](https://ielts.idp.com/cambodia/prepare/academic-reading)                             |
-| IDP practice-test hub         | [https://ielts.idp.com/prepare/academic-and-ukvi/reading/practice-test](https://ielts.idp.com/prepare/academic-and-ukvi/reading/practice-test) |
-| IDP prepare (all skills)      | [https://ielts.idp.com/prepare](https://ielts.idp.com/prepare)                                                                                 |
-
-### Feedback tools (Cambridge)
-
-| Resource                        | Link                                                                                       |
-| ------------------------------- | ------------------------------------------------------------------------------------------ |
-| Write & Improve (free)          | [https://writeandimprove.com/free?lang=en-EN](https://writeandimprove.com/free?lang=en-EN) |
-| Write & Improve IELTS Test Zone | [https://writeandimprove.com/testzone-ielts](https://writeandimprove.com/testzone-ielts)   |
-| Speak & Improve                 | [https://speakandimprove.com/](https://speakandimprove.com/)                               |
-
-### Technique (how to answer)
-
-| Resource                 | Link                                                                                                                                                       |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| IELTS Liz home           | [https://ieltsliz.com/](https://ieltsliz.com/)                                                                                                             |
-| Listening lessons        | [https://ieltsliz.com/ielts-listening/](https://ieltsliz.com/ielts-listening/)                                                                             |
-| Reading lessons          | [https://ieltsliz.com/ielts-reading-lessons-information-and-tips/](https://ieltsliz.com/ielts-reading-lessons-information-and-tips/)                       |
-| True / False / Not Given | [https://ieltsliz.com/ielts-true-false-not-given-essential-tips/](https://ieltsliz.com/ielts-true-false-not-given-essential-tips/)                         |
-| Matching headings        | [https://ieltsliz.com/matching-headings/](https://ieltsliz.com/matching-headings/)                                                                         |
-| Academic Writing Task 1  | [https://ieltsliz.com/ielts-writing-task-1-lessons-and-tips/](https://ieltsliz.com/ielts-writing-task-1-lessons-and-tips/)                                 |
-| Writing Task 2           | [https://ieltsliz.com/ielts-writing-task-2/](https://ieltsliz.com/ielts-writing-task-2/)                                                                   |
-| Linking words            | [https://ieltsliz.com/linking-words-for-writing/](https://ieltsliz.com/linking-words-for-writing/)                                                         |
-| Speaking lessons         | [https://ieltsliz.com/ielts-speaking-free-lessons-essential-tips/](https://ieltsliz.com/ielts-speaking-free-lessons-essential-tips/)                       |
-| IELTS Simon              | [https://www.ielts-simon.com/](https://www.ielts-simon.com/)                                                                                               |
-| Simon Writing Task 2     | [https://www.ielts-simon.com/ielts-help-and-english-pr/ielts-writing-task-2/](https://www.ielts-simon.com/ielts-help-and-english-pr/ielts-writing-task-2/) |
-
-### Extra English (not mocks)
-
-| Resource                               | Link                                                                                                                                               |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BBC 6 Minute English                   | [https://www.bbc.co.uk/learningenglish/english/features/6-minute-english](https://www.bbc.co.uk/learningenglish/english/features/6-minute-english) |
-| British Council LearnEnglish listening | [https://learnenglish.britishcouncil.org/skills/listening](https://learnenglish.britishcouncil.org/skills/listening)                               |
-| B1–B2 grammar                          | [https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar](https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar)                     |
-| Perfect English Grammar                | [https://www.perfect-english-grammar.com/](https://www.perfect-english-grammar.com/)                                                               |
-| TED Talks                              | [https://www.ted.com/talks](https://www.ted.com/talks)                                                                                             |
-| IELTS Official YouTube                 | [https://www.youtube.com/@IELTSofficial](https://www.youtube.com/@IELTSofficial)                                                                   |
-| Take IELTS Official (British Council)  | [https://www.youtube.com/@TakeIELTSOfficial](https://www.youtube.com/@TakeIELTSOfficial)                                                           |
-| IELTS Liz YouTube                      | [https://www.youtube.com/@IELTSLiz](https://www.youtube.com/@IELTSLiz)                                                                             |
-
-### Paid (recommended, not required)
-
-Buy **Cambridge IELTS Academic 18, 19, or 20** if you can. Each book has 4 authentic past papers with audio and answer keys. Use them from Week 4 onward, not in Week 1.
-
-- [The Official Cambridge Guide to IELTS](https://www.cambridge.org/us/cambridgeenglish/catalog/cambridge-english-exams-ielts/official-cambridge-guide-ielts)
-
-## What “done” means for each skill
-
-**Listening.** One play only. Type answers as you listen. On IELTS Online Tests, skip any extra transfer time. Check the key. Replay only *after* scoring, and only the questions you missed.
-
-**Reading.** 60 minutes for 3 passages / 40 questions. Do not read the whole passage first on True/False/Not Given or matching headings. Transfer answers inside the hour on computer; there is no extra transfer time.
-
-**Writing.** Task 1: 20 minutes, 150+ words, **overview required**. Task 2: 40 minutes, 250+ words, **clear position**. Then score yourself with the official descriptors, not with “it looks good.”
-
-**Speaking.** Phone voice memo is enough. Part 2 must run **close to 2 minutes**. If you finish at 50 seconds, that is a 5.5 habit. Fix it.
 
 ## Error log (copy this into a notes app)
 
@@ -221,7 +20,7 @@ Review this log at the end of each week. Week 6 is built from it.
 
 ## Week 1: Diagnose + format
 
-**Aim:** know the computer test, sit a real timed Listening and Reading, read how 6 vs 6.5 is marked, book the exam.
+**Aim:** know the computer test, sit a real timed Listening and Reading, and read how 6 vs 6.5 is marked.
 
 **Week 1 checkpoint:** you have a Listening /40, a Reading /40, one Task 1, one Task 2, and one full Speaking recording.
 
@@ -231,9 +30,8 @@ Review this log at the end of each week. Week 6 is built from it.
 - [ ] Bookmark [Academic sample tests](https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test)
 - [ ] Download these three PDFs (one file each, answers inside) so you can skip the messy British Council menus: [Reading](https://ielts.org/cdn/Sample-tests/ielts-academic-reading-sample-tasks-2023.pdf), [Writing](https://ielts.org/cdn/Sample-tests/ielts-academic-writing-sample-tasks-2023.pdf), [Listening](https://s3.eu-west-2.amazonaws.com/ielts-web-static/production/Sample-tests/ielts-listening-sample-tasks-2023.pdf)
 - [ ] Read band **6 and 6.5 only** in [Writing descriptors](https://ielts.org/cdn/ielts-guides/ielts-writing-band-descriptors.pdf) and [Speaking descriptors](https://ielts.org/cdn/ielts-guides/ielts-speaking-band-descriptors.pdf)
-- [ ] Book a date in the 28 Oct–7 Nov window: [British Council Cambodia](https://cambodia.britishcouncil.org/ielts/book-test) or [IDP Cambodia](https://ielts.idp.com/cambodia). After a British Council booking, unlock [IELTS Ready Premium](https://takeielts.britishcouncil.org/take-ielts/prepare/ielts-ready) and [Road to IELTS](https://cambodia.britishcouncil.org/ielts/prepare) for another look at the real computer screen
 - [ ] Create free accounts: [Write & Improve](https://writeandimprove.com/free?lang=en-EN), [Speak & Improve](https://speakandimprove.com/), [IELTS Online Tests](https://ieltsonlinetests.com/), optional [IELTS Ready](https://takeielts.britishcouncil.org/take-ielts/prepare/ielts-ready)
-- [ ] Done when: test date is in your calendar (or you have checked the next open weekend) and descriptors are saved on your phone
+- [ ] Done when: descriptors are saved on your phone
 
 ### Diagnostic Listening · 1.7 hours
 
@@ -283,7 +81,6 @@ Review this log at the end of each week. Week 6 is built from it.
 - [ ] 40 min untimed: [Academic Reading sample PDF](https://ielts.org/cdn/Sample-tests/ielts-academic-reading-sample-tasks-2023.pdf): Matching Headings **and** Matching Features only. Check answers in the same PDF
 - [ ] 20 min: rewrite the introduction and one body paragraph from Task 2 + full Speaking (clearer topic sentence)
 - [ ] 15 min: [BBC 6 Minute English](https://www.bbc.co.uk/learningenglish/english/features/6-minute-english): latest episode, notes on 5 phrases
-- [ ] Confirm test booking / Road to IELTS access
 - [ ] Done when: headings exercise is scored
 
 ## Week 2: Question-type technique
@@ -346,7 +143,6 @@ Review this log at the end of each week. Week 6 is built from it.
 ### Listening Parts 3–4 · 1.7 hours
 
 - [ ] 40 min: table completion + sentence completion (lecture / discussion) from [ielts.org samples](https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test) and [Listening PDF](https://s3.eu-west-2.amazonaws.com/ielts-web-static/production/Sample-tests/ielts-listening-sample-tasks-2023.pdf)
-- [ ] 25 min: [IDP Academic Reading prep](https://ielts.idp.com/cambodia/prepare/academic-reading): read skills, then one short IDP practice item from [IDP practice hub](https://ielts.idp.com/prepare/academic-and-ukvi/reading/practice-test)
 - [ ] 20 min: rewrite the Task 2 conclusion from Task 2 timed + model so it matches your position
 - [ ] 15 min Part 2 recording
 - [ ] Done when: Parts 3–4 question types are in the error log
@@ -405,7 +201,7 @@ Review this log at the end of each week. Week 6 is built from it.
 - [ ] 15 min Part 1 speaking (work, study, hometown: high frequency)
 - [ ] Done when: you have used highlighting/notes once on the [IELTS.org Academic Reading test](https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test)
 
-### Task 2 + IDP samples · 1.7 hours
+### Task 2 + reading samples · 1.7 hours
 
 - [ ] **Timed 40 min.** Task 2 from [Write & Improve IELTS Test Zone](https://writeandimprove.com/testzone-ielts) if available, else [Liz Task 2](https://ieltsliz.com/ielts-writing-task-2/)
 - [ ] 25 min: table completion and summary completion in the [Academic Reading sample PDF](https://ielts.org/cdn/Sample-tests/ielts-academic-reading-sample-tasks-2023.pdf). Check the answers in that PDF
@@ -579,7 +375,7 @@ This is the last heavy three-paper day.
 - [ ] Score L/R. Copy the /40 and bands into the Peak score tracker row. Estimate W with descriptors. Record full Speaking
 - [ ] Write **final three problems** (example: “no overview”, “NG vs F”, “Part 2 under 1:20”)
 - [ ] 20 min: only those three problems
-- [ ] Confirm test centre, ID, start time: [BC book/info](https://cambodia.britishcouncil.org/ielts/book-test) or [IDP Cambodia](https://ielts.idp.com/cambodia)
+- [ ] Confirm test centre, ID, and start time from your booking email
 - [ ] Done when: peak-mock band estimate is on paper
 
 ### Fix the three problems · 1.5 hours
@@ -647,7 +443,6 @@ If you sit next week:
 | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Book British Council Cambodia               | [https://cambodia.britishcouncil.org/ielts/book-test](https://cambodia.britishcouncil.org/ielts/book-test)                                                                                                                 |
 | Prepare / Road to IELTS (after booking)     | [https://cambodia.britishcouncil.org/ielts/prepare](https://cambodia.britishcouncil.org/ielts/prepare)                                                                                                                     |
-| IDP Cambodia                                | [https://ielts.idp.com/cambodia](https://ielts.idp.com/cambodia)                                                                                                                                                           |
 | Official sample tests (last look at format) | [https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test](https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test)                                         |
 | Computer familiarisation                    | [https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test](https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test) |
 | Free scored Listening and Reading           | [https://ieltsonlinetests.com/ielts-exam-library](https://ieltsonlinetests.com/ielts-exam-library)                                                                                                                                   |
@@ -661,14 +456,3 @@ If you sit next week:
 ## Weekly score tracker
 
 Copy after each timed full paper:
-
-## Rules that actually move 5.5–6 toward 6.5
-
-1. **Overview in every Academic Task 1.** Missing it caps Task Achievement around 5–6.
-2. **Answer the Task 2 question.** A beautiful essay on the wrong task stays at 5.5.
-3. **True/False/Not Given:** if the text does not say it, it is Not Given. Do not use world knowledge.
-4. **Listening spelling** is marked wrong. Keep a personal spelling list.
-5. **Part 2 under two minutes** is the most common Speaking leak at band 6.
-6. Official pages for the real screen and the marking rules. IELTS Online Tests for repeated Listening and Reading scores. Liz and Simon for method. Skip paid IELTS Online Tests writing and speaking scores.
-
-This plan is 6.5 weeks at 1.5–2 hours a day. That is enough time to pick up **about 0.5 band** if you do the timed work and the error log. It is not enough time if you only watch tip videos.
